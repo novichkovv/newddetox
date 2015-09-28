@@ -1,0 +1,10 @@
+CREATE DATABASE ddetox CHARACTER SET utf8;
+USE ddetox;
+
+CREATE TABLE mailing_data (
+  id SERIAL NOT NULL,
+  subject VARCHAR (255) NOT NULL,
+  mailing_day INT NOT NULL,
+  template VARCHAR (255) NOT NULL,
+  video VARCHAR (255) NOT NULL
+)ENGINE=MyISAM;
